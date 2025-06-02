@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamburgueria da Kay</title>
+    <title>Kay's Burguer</title>
     <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-
     <!-- Menu Lateral -->
     <div class="sidebar">
         <div class="logo">
-            <h1>Burger Delícia</h1>
+            <h1>Kay's Burguer</h1>
             <p>A melhor hamburgueria da cidade</p>
         </div>
         
         <div class="menu-category">
             <h2>Cardápio</h2>
             <ul class="menu-items">
-                <li class="active" onclick="showSection('Hamburgers')">Hambúrgueres</li>
-                <li onclick="showSection('Bebidas')">Bebidas</li>
-                <li onclick="showSection('Porções')">Porções</li>
-                <li onclick="showSection('Contato')">Contato</li>
+                <li class="active" onclick="showSection('hamburgers')">Hambúrgueres</li>
+                <li onclick="showSection('bebidas')">Bebidas</li>
+                <li onclick="showSection('porcoes')">Porções</li>
+                <li onclick="showSection('contato')">Contato</li>
             </ul>
         </div>
     </div>
-
+    
     <!-- Conteúdo Principal -->
     <div class="main-content">
         <div class="header">
@@ -35,166 +35,233 @@
                 <span class="cart-count">0</span>
             </div>
         </div>
+        
+        <!-- Seção de Hambúrgueres -->
+        <div id="hamburgers" class="content-section">
+            <div class="products-grid">
 
-     <!-- Seção de Hambúrgueres -->
-     <div id="hamburgers" class="content-section">
-        <div class="products-grid">
-            <!-- Hambúrguer 1 -->
-            <div class="product-card">
-                <img src="" alt="Hambúrguer Clássico" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">X-Burguer</h3>
-                    <p class="product-description">Pão brioche, hambúrguer 180g, queijo, alface, tomate e molho especial</p>
-                    <div class="product-price">R$ 24,90</div>
-                    <button class="add-to-cart" onclick="addToCart('Hambúrguer Clássico', 24.90)">Adicionar ao Carrinho</button>
+                <div class="product-card">
+                    <img src="./img/chicken.png" alt="Chicken Burguer" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Chicken Burguer</h3>
+                        <p class="product-description">Pão brioche, hambúrguer 180g, queijo, alface, tomate e molho.</p>
+                        <div class="product-price">R$ 24,90</div>
+                        <button class="add-to-cart" onclick="addToCart('Chicken Burguer', 24.90)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="./img/salada.png" alt="X-Salada" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">X-Salada</h3>
+                        <p class="product-description">Pão australiano,2 hambúrgueres 120g, queijo e cebola caramelizada</p>
+                        <div class="product-price">R$ 29,90</div>
+                        <button class="add-to-cart" onclick="addToCart('X-Salada', 29.90)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="./img/bacon.png" alt="Bacon Burger" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Bacon Burger</h3>
+                        <p class="product-description">Pão brioche, hambúrguer 180g, queijo, bacon crocante e molho.</p>
+                        <div class="product-price">R$ 32,90</div>
+                        <button class="add-to-cart" onclick="addToCart('Bacon Burger', 32.90)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="./img/vegetariano.jpg" alt="Vegetariano" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Vegetariano</h3>
+                        <p class="product-description">Pão integral, hambúrguer de grão-de-bico, queijo branco, rúcula e tomate.</p>
+                        <div class="product-price">R$ 27,90</div>
+                        <button class="add-to-cart" onclick="addToCart('Vegetariano', 27.90)">Adicionar ao Carrinho</button>
+                    </div>
                 </div>
             </div>
+        </div>
+        
+        <!-- Seção de Bebidas -->
+        <div id="bebidas" class="content-section" style="display: none;">
+            <div class="products-grid">
 
-            <!-- Hambúrguer 2 -->
-            <div class="product-card">
-                <img src="" alt="Cheeseburger" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Cheeseburger</h3>
-                    <p class="product-description">Pão australiano, 2 hambúrgueres 120g, queijo cheddar, cebola caramelizada</p>
-                    <div class="product-price">R$ 29,90</div>
-                    <button class="add-to-cart" onclick="addToCart('Cheeseburger', 29.90)">Adicionar ao Carrinho</button>
+                <div class="product-card">
+                    <img src="./img/agua.jpg" alt="Água" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Água 500ml</h3>
+                        <p class="product-description">Água</p>
+                        <div class="product-price">R$ 5,00</div>
+                        <button class="add-to-cart" onclick="addToCart('Água 500ml', 5.00)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="./img/refri.webp" alt="Refrigerante" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Refrigerante 350ml</h3>
+                        <p class="product-description">Coca-Cola, Guaraná, Fanta ou Sprite</p>
+                        <div class="product-price">R$ 6,00</div>
+                        <button class="add-to-cart" onclick="addToCart('Refrigerante 350ml', 6.00)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="./img/suco.jpg" alt="Suco Natural" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Suco Natural 500ml</h3>
+                        <p class="product-description">Laranja, Abacaxi, Maracujá ou Limão</p>
+                        <div class="product-price">R$ 10,00</div>
+                        <button class="add-to-cart" onclick="addToCart('Suco Natural 500ml', 10.00)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="./img/cerveja.jpg" alt="Cerveja" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Cerveja 600ml</h3>
+                        <p class="product-description">Heineken, Stella Artois ou Budweiser</p>
+                        <div class="product-price">R$ 15,90</div>
+                        <button class="add-to-cart" onclick="addToCart('Cerveja 600ml', 15.90)">Adicionar ao Carrinho</button>
+                    </div>
                 </div>
             </div>
-
-            <!-- Hambúrguer 3 -->
-            <div class="product-card">
-                <img src="" alt="Bacon Burger" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Bacon Burger</h3>
-                    <p class="product-description">Pão brioche, hambúrguer 180g, queijo, bacon crocante e molho barbecue</p>
-                    <div class="product-price">R$ 32,90</div>
-                    <button class="add-to-cart" onclick="addToCart('Bacon Burger', 32.90)">Adicionar ao Carrinho</button>
+        </div>
+        
+        <!-- Seção de Porções -->
+        <div id="porcoes" class="content-section" style="display: none;">
+            <div class="products-grid">
+                <!-- Porção 1 -->
+                <div class="product-card">
+                    <img src="./img/bttft.jpg" alt="Batata Frita" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Batata Frita</h3>
+                        <p class="product-description">Porção de batata frita crocante com cheddar e bacon</p>
+                        <div class="product-price">R$ 13,00</div>
+                        <button class="add-to-cart" onclick="addToCart('Batata Frita', 13.00)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                
+                <!-- Porção 2 -->
+                <div class="product-card">
+                    <img src="./img/onion.jpg" alt="Onion Rings" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Onion Rings</h3>
+                        <p class="product-description">Anéis de cebola empanados e crocantes</p>
+                        <div class="product-price">R$ 14,90</div>
+                        <button class="add-to-cart" onclick="addToCart('Onion Rings', 14.90)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                
+                <!-- Porção 3 -->
+                <div class="product-card">
+                    <img src="./img/nuggets.jpg" alt="Nuggets" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Nuggets</h3>
+                        <p class="product-description">8 unidades de nuggets de frango crocantes</p>
+                        <div class="product-price">R$ 10,00</div>
+                        <button class="add-to-cart" onclick="addToCart('Nuggets', 10.00)">Adicionar ao Carrinho</button>
+                    </div>
                 </div>
             </div>
-
-            <!-- Hambúrguer 4 -->
-            <div class="product-card">
-                <img src="" alt="Vegetariano" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Vegetariano</h3>
-                    <p class="product-description">Pão integral, hambúrguer de grão-de-bico, queijo branco, rúcula e tomate seco</p>
-                    <div class="product-price">R$ 27,90</div>
-                    <button class="add-to-cart" onclick="addToCart('Vegetariano', 27.90)">Adicionar ao Carrinho</button>
+        </div>
+        
+        <!-- Seção de Contato -->
+        <div id="contato" class="content-section" style="display: none;">
+            <div class="contact-page">
+                <h1>Entre em Contato</h1>
+                
+                <div class="contact-info">
+                    <div>
+                        <h4>Endereço:</h4>
+                        <span>Rua XV de Novembro, 123 - Centro, Paranaguá/PR </span>
+                    </div>
+                    <div>
+                        <h4>Telefone:</h4>
+                        <span>(11) 1234-5678</span>
+                    </div>
+                    <div>
+                        <h4>Email:</h4>
+                        <span>contato@kaysburguer.com.br</span>
+                    </div>
+                    <div>
+                        <h4>Horário de Funcionamento: </h4>
+                        <span> Segunda a Sábado: 10h à 00h | Domingo: 11h às 22h</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    <script>
 
-     <!-- Seção de Bebidas -->
-    <div id="bebidas" class="content-section" style="display: none;">
-        <div class="products-grid">
-            <!-- Bebida 1 -->
-            <div class="product-card">
-                <img src="" alt="Refrigerante" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Refrigerante 350ml</h3>
-                    <p class="product-description">Coca-Cola, Guaraná, Fanta ou Sprite</p>
-                    <div class="product-price">R$ 6,90</div>
-                    <button class="add-to-cart" onclick="addToCart('Refrigerante 350ml', 6.90)">Adicionar ao Carrinho</button>
-                </div>
-            </div>
-            
-            <!-- Bebida 2 -->
-            <div class="product-card">
-                <img src="" alt="Suco Natural" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Suco Natural 500ml</h3>
-                    <p class="product-description">Laranja, Abacaxi, Maracujá ou Limão</p>
-                    <div class="product-price">R$ 12,90</div>
-                    <button class="add-to-cart" onclick="addToCart('Suco Natural 500ml', 12.90)">Adicionar ao Carrinho</button>
-                </div>
-            </div>
-            
-            <!-- Bebida 3 -->
-            <div class="product-card">
-                <img src="" alt="Cerveja" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Cerveja 600ml</h3>
-                    <p class="product-description">Heineken, Stella Artois ou Budweiser</p>
-                    <div class="product-price">R$ 15,90</div>
-                    <button class="add-to-cart" onclick="addToCart('Cerveja 600ml', 15.90)">Adicionar ao Carrinho</button>
-                </div>
-            </div>
-        </div>
-    </div>
+        let cartItems = [];
+        let cartCount = 0;
+        
 
-     <!-- Seção de Porções -->
-     <div id="porcoes" class="content-section" style="display: none;">
-        <div class="products-grid">
-            <!-- Porção 1 -->
-            <div class="product-card">
-                <img src="" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Batata Frita</h3>
-                    <p class="product-description">Porção de batata frita crocante com cheddar e bacon</p>
-                    <div class="product-price">R$ 22,90</div>
-                    <button class="add-to-cart" onclick="addToCart('Batata Frita', 22.90)">Adicionar ao Carrinho</button>
-                </div>
-            </div>
-            
-            <!-- Porção 2 -->
-            <div class="product-card">
-                <img src="" alt="Onion Rings" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Onion Rings</h3>
-                    <p class="product-description">Anéis de cebola empanados e crocantes</p>
-                    <div class="product-price">R$ 18,90</div>
-                    <button class="add-to-cart" onclick="addToCart('Onion Rings', 18.90)">Adicionar ao Carrinho</button>
-                </div>
-            </div>
-            
-            <!-- Porção 3 -->
-            <div class="product-card">
-                <img src="" alt="Nuggets" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Nuggets</h3>
-                    <p class="product-description">10 unidades de nuggets de frango crocantes</p>
-                    <div class="product-price">R$ 19,90</div>
-                    <button class="add-to-cart" onclick="addToCart('Nuggets', 19.90)">Adicionar ao Carrinho</button>
-                </div>
-            </div>
-        </div>
-    </div>
+        function showSection(sectionId) {
 
-    <!-- Seção de Contato -->
-    <div id="contato" class="content-section" style="display: none;">
-        <div class="contact-page">
-            <h1>Entre em Contato</h1>
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.style.display = 'none';
+            });
             
-            <div class="contact-info">
-                <div>
-                    <i>Endereço:</i>
-                    <span>Rua dos Hamburgueres, 123 - Centro, Cidade/SP</span>
-                </div>
-                <div>
-                    <i>Telefone:</i>
-                    <span>(11) 1234-5678</span>
-                </div>
-                <div>
-                    <i>Email</i>
-                    <span>contato@burgerdelicia.com.br</span>
-                </div>
-                <div>
-                    <i>Horário de Funcionamento: </i>
-                    <span>Segunda a Sábado: 11h às 23h | Domingo: 11h às 22h</span>
-                </div>
-            </div>
-            
-            <form class="contact-form">
-                <input type="text" placeholder="Seu nome" required>
-                <input type="email" placeholder="Seu e-mail" required>
-                <input type="tel" placeholder="Seu telefone">
-                <textarea placeholder="Sua mensagem" required></textarea>
-                <button type="submit" class="submit-btn">Enviar Mensagem</button>
-            </form>
-        </div>
-    </div>
-</div>
 
+            document.getElementById(sectionId).style.display = 'block';
+            
+            const titles = {
+                'hamburgers': 'Hambúrgueres',
+                'bebidas': 'Bebidas',
+                'porcoes': 'Porções',
+                'contato': 'Contato'
+            };
+            document.getElementById('section-title').textContent = titles[sectionId];
+
+            document.querySelectorAll('.menu-items li').forEach(item => {
+                item.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+        
+        //adiciona o item no carrinho//
+        function addToCart(itemName, itemPrice) {
+            cartItems.push({ name: itemName, price: itemPrice });
+            cartCount++;
+            updateCartCount();
+            
+        //mostra que foi adicionado ao carrinho//
+            const button = event.target;
+            button.textContent = '✔️ Adicionado';
+            button.style.backgroundColor = '#4CAF50';
+            
+            setTimeout(() => {
+                button.textContent = 'Adicionar ao Carrinho';
+                button.style.backgroundColor = '#ff8c00';
+            }, 2000);
+        }
+        
+        //muda o número do carrinho
+        function updateCartCount() {
+            document.querySelector('.cart-count').textContent = cartCount;
+        }
+        
+        // mostra a situação do carrinho//
+        function showCart() {
+            if (cartItems.length === 0) {
+                alert('Seu carrinho está vazio!');
+            } else {
+                let message = 'Itens no seu carrinho:\n\n';
+                let total = 0;
+                
+                cartItems.forEach(item => {
+                    message += `${item.name} - R$ ${item.price.toFixed(2)}\n`;
+                    total += item.price;
+                });
+                
+                message += `\nTotal: R$ ${total.toFixed(2)}`;
+                
+                alert(message);
+            }
+        }
+    </script>
 </body>
 </html>

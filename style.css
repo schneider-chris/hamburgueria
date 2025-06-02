@@ -25,7 +25,7 @@ body {
 
 .logo h1 {
     font-size: 1.5rem;
-    color: #ff8c00;
+    color: #0003b8;
 }
 
 .logo p {
@@ -39,7 +39,7 @@ body {
 
 .menu-category h2 {
     padding: 10px 20px;
-    background-color: #ff8c00;
+    background-color: #0003b8;
     color: white;
     font-size: 1rem;
     text-transform: uppercase;
@@ -58,13 +58,13 @@ body {
 
 .menu-items li:hover {
     background-color: #444;
-    color: #ff8c00;
+    color: #0003b8;
 }
 
 .menu-items li.active {
     background-color: #333;
-    color: #ff8c00;
-    border-left: 4px solid #ff8c00;
+    color: #0003b8;
+    border-left: 4px solid #0003b8;
 }
 
  /* Conteúdo Principal */
@@ -92,7 +92,7 @@ body {
     position: absolute;
     top: -10px;
     right: -10px;
-    background-color: #ff8c00;
+    background-color: #0003b8;
     color: white;
     border-radius: 50%;
     width: 20px;
@@ -147,17 +147,17 @@ body {
     overflow: hidden;
 }
 
-.product-price {
+.preco-produto {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #ff8c00;
+    color: #0003b8;
     margin-bottom: 15px;
 }
 
 .add-to-cart {
     width: 100%;
     padding: 10px;
-    background-color: #ff8c00;
+    background-color: #0003b8;
     color: white;
     border: none;
     border-radius: 4px;
@@ -167,7 +167,7 @@ body {
 }
 
 .add-to-cart:hover {
-    background-color: #e67e00;
+    background-color: #2b1ee6;
 }
 
 /* Página de Contato */
@@ -181,7 +181,7 @@ body {
 }
 
 .contact-page h1 {
-    color: #ff8c00;
+    color: #0003b8;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -198,7 +198,7 @@ body {
 
 .contact-info i {
     margin-right: 10px;
-    color: #ff8c00;
+    color: #0003b8;
     width: 20px;
     text-align: center;
 }
@@ -217,7 +217,7 @@ body {
 }
 
 .submit-btn {
-    background-color: #ff8c00;
+    background-color: #0003b8;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -228,7 +228,7 @@ body {
 }
 
 .submit-btn:hover {
-    background-color: #e67e00;
+    background-color: #2b1ee6;
 }
 
 /* Responsividade */
